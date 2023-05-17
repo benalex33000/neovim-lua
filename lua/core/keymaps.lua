@@ -24,7 +24,8 @@ map('', '<left>', '<nop>')
 map('', '<right>', '<nop>')
 
 -- Map Esc to kk
-map('i', 'kk', '<Esc>')
+map('i', 'kj', '<Esc>')
+map('i', 'jk', '<Esc>')
 
 -- Clear search highlighting with <leader> and c
 map('n', '<leader>c', ':nohl<CR>')
@@ -64,6 +65,7 @@ map('t', '<Esc>', '<C-\\><C-n>')                    -- exit
 map('n', '<C-n>', ':NvimTreeToggle<CR>')            -- open/close
 map('n', '<leader>f', ':NvimTreeRefresh<CR>')       -- refresh
 map('n', '<leader>n', ':NvimTreeFindFile<CR>')      -- search file
+
 
 -- Tagbar
 map('n', '<leader>z', ':TagbarToggle<CR>')          -- open/close

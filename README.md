@@ -121,7 +121,12 @@ cp -Rv nvim ~/.config/
 
 6. Install [lazy.nvim](https://github.com/folke/lazy.nvim) for install and manage the plugins, see: [lazy.nvim - Installation](https://github.com/folke/lazy.nvim#-installation)
 
-7. Run Neovim for download/sync plugins with `lazy`
+7. Install riggrep for telescope plugins
+```term
+brew install ripgrep
+```
+
+8. Run Neovim for download/sync plugins with `lazy`
 
 ```term
 nvim
