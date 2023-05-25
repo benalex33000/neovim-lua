@@ -20,3 +20,25 @@ require('plugins/nvim-cmp')
 require('plugins/nvim-treesitter')
 require('plugins/alpha-nvim')
 require('plugins/nvim-telescope')
+
+
+-- basic config
+
+--indentation
+
+-- Enable syntax highlighting
+vim.cmd('syntax enable')
+
+-- Smart indentation
+
+vim.cmd('set smartindent')
+
+-- Enable auto-indentation
+vim.cmd('set autoindent')
+
+-- Use spaces for indentation instead of tabs
+vim.cmd('set expandtab')
+
+-- Set the indentation width
+vim.cmd('set shiftwidth=2')
+

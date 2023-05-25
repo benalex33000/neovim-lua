@@ -36,16 +36,16 @@ lazy.setup({
     -- The colorscheme should be available when starting Neovim.
     {
       'navarasu/onedark.nvim',
-      lazy = false, -- make sure we load this during startup if it is your main colorscheme
+      lazy = false,    -- make sure we load this during startup if it is your main colorscheme
       priority = 1000, -- make sure to load this before all the other start plugins
     },
 
     -- other colorschemes:
-    { 'tanvirtin/monokai.nvim', lazy = true },
+    { 'tanvirtin/monokai.nvim',              lazy = true },
     { 'https://github.com/rose-pine/neovim', name = 'rose-pine', lazy = true },
 
     -- Icons
-    { 'kyazdani42/nvim-web-devicons', lazy = true },
+    { 'kyazdani42/nvim-web-devicons',        lazy = true },
 
     -- Dashboard (start screen)
     {
@@ -62,7 +62,7 @@ lazy.setup({
         'kyazdani42/nvim-web-devicons',
       },
       config = function()
-        require('gitsigns').setup{}
+        require('gitsigns').setup {}
       end
     },
 
@@ -82,7 +82,7 @@ lazy.setup({
     },
 
     -- Treesitter
-    { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
+    { 'nvim-treesitter/nvim-treesitter',    build = ':TSUpdate' },
 
     -- Indent line
     { 'lukas-reineke/indent-blankline.nvim' },
@@ -95,18 +95,51 @@ lazy.setup({
       'windwp/nvim-autopairs',
       event = 'InsertEnter',
       config = function()
-        require('nvim-autopairs').setup{}
+        require('nvim-autopairs').setup {}
       end
     },
 
     -- Telescope
     {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+      'nvim-telescope/telescope.nvim',
+      tag = '0.1.1',
       dependencies = { 'nvim-lua/plenary.nvim' }
     },
+    -- Autotag
+    { 'windwp/nvim-ts-autotag' },
 
     -- LSP
     { 'neovim/nvim-lspconfig' },
+    {
+      'williamboman/mason.nvim',
+      build = ":MasonUpdate" -- :MasonUpdate updates registry
+    },
+    -- which-key.nvim
+    {
+      "folke/which-key.nvim",
+      event = "VeryLazy",
+      init = function()
+        vim.o.timeout = true
+        vim.o.timeoutlen = 300
+      end,
+      opts = {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    },
+    -- Hop vim
+    {
+      'phaazon/hop.nvim',
+      config = function()
+        require 'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+        vim.api.nvim_set_keymap("n", "<leader>j", "<Cmd>HopWord<CR>", {
+          noremap = true,
+          silent = true
+        })
+      end
+    },
+    { 'williamboman/mason-lspconfig.nvim' },
 
     -- Autocomplete
     {
