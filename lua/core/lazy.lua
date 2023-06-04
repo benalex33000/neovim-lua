@@ -135,6 +135,12 @@ lazy.setup({
     },
     { 'williamboman/mason-lspconfig.nvim' },
 
+    -- Handle multiple tab
+
+    {
+      'romgrk/barbar.nvim',
+    },
+
     -- Autocomplete
     {
       'hrsh7th/nvim-cmp',

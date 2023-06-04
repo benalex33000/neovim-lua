@@ -21,6 +21,7 @@ require('plugins/nvim-treesitter')
 require('plugins/alpha-nvim')
 require('plugins/nvim-telescope')
 require('plugins/hop')
+require('plugins/barbar')
 
 
 -- basic config

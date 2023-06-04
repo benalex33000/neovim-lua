@@ -225,6 +225,15 @@ These are the default keymaps, in the following shortcuts, the `<leader>` key is
 | `<leader>j`          | Normal        | Open hop plugin                                   |
 | `f`                  | Normal        | Open hop with one character filter                |
 | `t`                  | Normal        | Open hop with pattern filter                      |
+| `<leader>a`          | Normal        | Move to the previous buffer                       |
+| `<leader>e`          | Normal        | Move to the next buffer                           |
+| `<leader>&`          | Normal        | Move to the first buffer                          |
+| `<leader>é`          | Normal        | Move to the second buffer                         |
+| `<leader>"`          | Normal        | Move to the third  buffer                         |
+| `<leader>'`          | Normal        | Move to the fourth buffer                         |
+| `<leader>c`          | Normal        | Close the current buffer                          |
+| `<leader>ff`         | Normal        | Open telescope for file                           |
+| `<leader>fs`         | Normal        | Open telescope for string                         |
 
 ## Configuration Check
 
