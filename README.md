@@ -210,7 +210,8 @@ These are the default keymaps, in the following shortcuts, the `<leader>` key is
 
 | Shortcut             | Mode          | Description                                       |
 |----------------------|---------------|---------------------------------------------------|
-| `kk`                 | Insert        | Esc with `kk`                                     |
+| `kj`                 | Insert        | Esc with `kj`                                     |
+| `jk`                 | Insert        | Esc with `jk`                                     |
 | `<leader>c`          | Normal        | Clear search highlights                           |
 | `<F2>`               | Normal        | Toggle Paste mode                                 |
 | `<leader>tk/th`      | Normal        | Change split orientation (vertical/horizontal)    |
