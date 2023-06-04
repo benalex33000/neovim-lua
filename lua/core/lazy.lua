@@ -120,7 +120,7 @@ lazy.setup({
       event = "VeryLazy",
       init = function()
         vim.o.timeout = true
-        vim.o.timeoutlen = 300
+        vim.o.timeoutlen = 500
       end,
       opts = {
         -- your configuration comes here
@@ -130,14 +130,8 @@ lazy.setup({
     },
     -- Hop vim
     {
-      'phaazon/hop.nvim',
-      config = function()
-        require 'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
-        vim.api.nvim_set_keymap("n", "<leader>j", "<Cmd>HopWord<CR>", {
-          noremap = true,
-          silent = true
-        })
-      end
+      "phaazon/hop.nvim",
+      lazy = true,
     },
     { 'williamboman/mason-lspconfig.nvim' },
 
