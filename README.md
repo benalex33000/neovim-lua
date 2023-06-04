@@ -222,6 +222,9 @@ These are the default keymaps, in the following shortcuts, the `<leader>` key is
 | `<Esc>`              | Terminal      | Exit terminal                                     |
 | `<Ctrl> + n`         | Normal        | Open NvimTree                                     |
 | `<leader>z`          | Normal        | Open Tagbar                                       |
+| `<leader>j`          | Normal        | Open hop plugin                                   |
+| `f`                  | Normal        | Open hop with one character filter                |
+| `t`                  | Normal        | Open hop with pattern filter                      |
 
 ## Configuration Check
 
